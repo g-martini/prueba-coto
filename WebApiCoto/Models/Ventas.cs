@@ -5,7 +5,7 @@ namespace WebApiCoto
     public class Ventas
     {
         public long Id { get; set; }
-        public long IdCentro { get; set; }
-        public long IdTipo { get; set; }
+        public CentrosDistribucion centroDistribucion { get; set; }
+        public TiposVehiculo tipoVehiculo { get; set; }
     }
 }
