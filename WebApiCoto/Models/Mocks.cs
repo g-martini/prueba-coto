@@ -4,42 +4,6 @@ namespace WebApiCoto.Models
 {
     public class Mocks
     {
-        public Mocks()
-        {
-            #region TIPOS_VEHICULOS
-            tiposVehiculo = new List<TiposVehiculo>();
-            tiposVehiculo.Add(tipoSedan);
-            tiposVehiculo.Add(tipoSuv);
-            tiposVehiculo.Add(tipoOffroad);
-            tiposVehiculo.Add(tipoSport);
-            #endregion
-
-            #region CENTROS_DISTRIBUCION
-            centrosDistribucion = new List<CentrosDistribucion>();
-            centrosDistribucion.Add(centro1);
-            centrosDistribucion.Add(centro2);
-            centrosDistribucion.Add(centro3);
-            centrosDistribucion.Add(centro4);
-            #endregion
-
-            #region VENTAS
-            ventas = new List<Ventas>();
-            ventas.Add(venta1);
-            ventas.Add(venta2);
-            ventas.Add(venta3);
-            ventas.Add(venta4);
-            ventas.Add(venta5);
-            ventas.Add(venta6);
-            ventas.Add(venta7);
-            ventas.Add(venta8);
-            ventas.Add(venta9);
-            ventas.Add(venta10);
-            ventas.Add(venta11);
-            ventas.Add(venta12);
-            ventas.Add(venta13);
-            #endregion
-        }
-
         #region TIPOS_VEHICULOS
         private static readonly TiposVehiculo tipoSedan = new TiposVehiculo
         {
@@ -70,7 +34,19 @@ namespace WebApiCoto.Models
             precio = 18200
         };
 
-        public static List<TiposVehiculo> tiposVehiculo;
+        private static List<TiposVehiculo> _tiposVehiculo;
+        public static List<TiposVehiculo> tiposVehiculo
+        {
+            get
+            {
+                _tiposVehiculo = new List<TiposVehiculo>();
+                _tiposVehiculo.Add(tipoSedan);
+                _tiposVehiculo.Add(tipoSuv);
+                _tiposVehiculo.Add(tipoOffroad);
+                _tiposVehiculo.Add(tipoSport);
+                return _tiposVehiculo;
+            }
+        }   
         #endregion
 
         #region CENTROS_DISTRIBUCION
@@ -95,7 +71,19 @@ namespace WebApiCoto.Models
             nombre = "Centro4"
         };
 
-        public static List<CentrosDistribucion> centrosDistribucion;
+        private static List<CentrosDistribucion> _centrosDistribucion;
+        public static List<CentrosDistribucion> centrosDistribucion
+        {
+            get
+            {
+                _centrosDistribucion = new List<CentrosDistribucion>();
+                _centrosDistribucion.Add(centro1);
+                _centrosDistribucion.Add(centro2);
+                _centrosDistribucion.Add(centro3);
+                _centrosDistribucion.Add(centro4);
+                return _centrosDistribucion;
+            }
+        }
         #endregion
 
         #region VENTAS
@@ -199,7 +187,28 @@ namespace WebApiCoto.Models
             tipoVehiculo = tipoSedan
         };
 
-        public static List<Ventas> ventas;
+        private static List<Ventas> _ventas;
+        public static List<Ventas> ventas
+        {
+            get
+            {
+                _ventas = new List<Ventas>();
+                _ventas.Add(venta1);
+                _ventas.Add(venta2);
+                _ventas.Add(venta3);
+                _ventas.Add(venta4);
+                _ventas.Add(venta5);
+                _ventas.Add(venta6);
+                _ventas.Add(venta7);
+                _ventas.Add(venta8);
+                _ventas.Add(venta9);
+                _ventas.Add(venta10);
+                _ventas.Add(venta11);
+                _ventas.Add(venta12);
+                _ventas.Add(venta13);
+                return _ventas;
+            }
+        }
         #endregion
 
     }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiCoto.Models;
 
 namespace WebApiCoto.Controllers
 {
@@ -16,6 +17,12 @@ namespace WebApiCoto.Controllers
         public AutosController(ILogger<AutosController> logger)
         {
             _logger = logger;
+        }
+
+        [HttpGet]
+        public decimal GetVolumenVentasTotal()
+        {
+            return Mocks.ventas.Sum(v => v.tipoVehiculo.precioFinal);
         }
     }
 }
