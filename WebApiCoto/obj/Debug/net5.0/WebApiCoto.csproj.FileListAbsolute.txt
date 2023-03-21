@@ -27,3 +27,4 @@ C:\Users\Guille\source\repos\prueba-coto\WebApiCoto\obj\Debug\net5.0\WebApiCoto.
 C:\Users\Guille\source\repos\prueba-coto\WebApiCoto\obj\Debug\net5.0\ref\WebApiCoto.dll
 C:\Users\Guille\source\repos\prueba-coto\WebApiCoto\obj\Debug\net5.0\WebApiCoto.pdb
 C:\Users\Guille\source\repos\prueba-coto\WebApiCoto\obj\Debug\net5.0\WebApiCoto.genruntimeconfig.cache
+C:\Users\Guille\source\repos\prueba-coto\WebApiCoto\bin\Debug\net5.0\Newtonsoft.Json.dll
